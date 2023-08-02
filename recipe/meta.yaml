@@ -1,6 +1,6 @@
 {% set name = "nagios" %}
-{% set version = "4.4.13" %}
-{% set sha256 = "c289488c7ba71e66aae9890113eee475b9cedfe92f663a899ac6f70764fc1727" %}
+{% set version = "4.4.14" %}
+{% set sha256 = "507caac1ae89974ffa8ea5b310aa048ba9ab00cd9711693ef36eb17eeea9f84f" %}
 
 package:
   name: {{ name|lower }}
