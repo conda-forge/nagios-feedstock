@@ -1,6 +1,6 @@
 {% set name = "nagios" %}
-{% set version = "4.5.1" %}
-{% set sha256 = "171fc577e026e32079d17057cd49a9730bb86e44169c4735d9b66fa0b43e045a" %}
+{% set version = "4.5.2" %}
+{% set sha256 = "84dd5bc03c5280484ada3a8c1f446499c437bc1e6f631f6440409071d4ea3d21" %}
 
 package:
   name: {{ name|lower }}
@@ -23,6 +23,7 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - make  # [not win]
   host:
     - openssl
